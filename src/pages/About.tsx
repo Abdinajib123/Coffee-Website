@@ -50,9 +50,9 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="h-screen">
       {/* Hero Section */}
-      <section className="relative text-gray-900">
+      <section className="relative text-gray-900 min-h-screen flex items-center">
         <div className="container-custom section-padding">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">

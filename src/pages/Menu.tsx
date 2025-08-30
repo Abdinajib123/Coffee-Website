@@ -168,9 +168,9 @@ const Menu = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="text-gray-900">
+      <section className="text-gray-900 min-h-screen flex items-center">
         <div className="container-custom section-padding">
           <div className="text-center">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">

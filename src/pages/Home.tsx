@@ -51,12 +51,12 @@ const Home = ({ onNavigate }: HomeProps) => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-700 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-700 text-white overflow-hidden h-screen flex items-center">
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative container-custom section-padding">
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+        <div className="relative container-custom py-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Experience the Perfect
@@ -94,120 +94,6 @@ const Home = ({ onNavigate }: HomeProps) => {
           </div>
         </div>
       </section>
-
-      {/* Features Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose BrewCafe?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're committed to delivering exceptional coffee experiences through quality, 
-              passion, and innovation.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="bg-coffee-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <feature.icon className="h-8 w-8 text-coffee-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Preview Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-900">
-                Crafting Coffee Excellence Since 2010
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Our journey began with a simple passion for perfect coffee. Today, 
-                we continue to source the world's finest beans and roast them to 
-                perfection, creating memorable experiences one cup at a time.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <div className="text-3xl font-bold text-coffee-600">14+</div>
-                  <div className="text-gray-600">Years of Experience</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-coffee-600">50K+</div>
-                  <div className="text-gray-600">Happy Customers</div>
-                </div>
-              </div>
-              <button 
-                onClick={() => handleNavClick('about')}
-                className="btn-primary inline-flex items-center"
-              >
-                Learn More
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-            </div>
-            <div className="relative">
-              <div className="bg-coffee-200 rounded-2xl p-8">
-                <div className="bg-coffee-100 rounded-xl p-6">
-                  <div className="bg-coffee-50 rounded-lg p-4">
-                    <Coffee className="h-24 w-24 text-coffee-600 mx-auto" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="section-padding bg-coffee-50">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              What Our Customers Say
-            </h2>
-            <p className="text-xl text-gray-600">
-              Don't just take our word for it - hear from our community
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 italic">
-                  "{testimonial.content}"
-                </p>
-                <div>
-                  <div className="font-semibold text-gray-900">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
     </div>
   );
 };

@@ -46,16 +46,16 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navbar activeSection={activeSection} onNavigate={scrollToSection} />
       <main>
-        <section id="home" className="h-auto">
+        <section id="home" >
           <Home onNavigate={scrollToSection} />
         </section>
-        <section id="about" className=" h-auto">
+        <section id="about" >
           <About />
         </section>
-        <section id="menu" className=" h-auto">
+        <section id="menu" >
           <Menu />
         </section>
-        <section id="contact" className=" h-auto">
+        <section id="contact">
           <Contact />
         </section>
       </main>
