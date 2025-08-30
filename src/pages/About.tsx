@@ -1,4 +1,4 @@
-import { Coffee, Award, Users, Globe, Heart, Target, Zap, Shield } from 'lucide-react';
+import { Coffee, Users, Globe, Heart, Target } from 'lucide-react';
 
 const About = () => {
   const values = [

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Coffee, Star, Plus, Minus, ShoppingCart } from 'lucide-react';
+import { Star, Plus, Minus, ShoppingCart } from 'lucide-react';
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
