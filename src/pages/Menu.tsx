@@ -170,13 +170,13 @@ const Menu = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="text-gray-900 min-h-screen flex items-center">
-        <div className="container-custom section-padding">
-          <div className="text-center">
+      <section className="text-gray-900 flex items-start pt-20 pb-8">
+        <div className="container-custom">
+          <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
               Our Menu
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 leading-relaxed">
               Discover our carefully crafted selection of coffee, tea, and pastries. 
               Each item is made with the finest ingredients and served with passion.
             </p>
@@ -184,11 +184,11 @@ const Menu = () => {
         </div>
       </section>
 
-      {/* Menu Section */}
-      <section className="section-padding">
+             {/* Menu Section */}
+       <section className="section-padding">
         <div className="container-custom">
           {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+                     <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -204,14 +204,14 @@ const Menu = () => {
             ))}
           </div>
 
-                     {/* Menu Items */}
-           <div className="grid grid-cols-3 gap-8">
+                                {/* Menu Items */}
+           <div className="grid grid-cols-3 gap-4">
              {filteredItems.slice(0, 6).map((item) => (
-              <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
+               <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                 <div className="p-4">
+                                     <div className="flex justify-between items-start mb-3">
+                     <div className="flex-1">
+                       <div className="flex items-center gap-2 mb-2">
                         <h3 className="text-xl font-semibold text-gray-900">
                           {item.name}
                         </h3>
@@ -221,10 +221,10 @@ const Menu = () => {
                           </span>
                         )}
                       </div>
-                      <p className="text-gray-600 text-sm mb-3">
-                        {item.description}
-                      </p>
-                      <div className="flex items-center gap-2 mb-4">
+                                             <p className="text-gray-600 text-sm mb-2">
+                         {item.description}
+                       </p>
+                       <div className="flex items-center gap-2 mb-3">
                         <div className="flex items-center">
                           <Star className="h-4 w-4 text-yellow-400 fill-current" />
                           <span className="text-sm text-gray-600 ml-1">
@@ -241,34 +241,34 @@ const Menu = () => {
                     </div>
                   </div>
                   
-                  {/* Cart Controls */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
+                                     {/* Cart Controls */}
+                   <div className="flex items-center justify-between">
+                     <div className="flex items-center gap-2">
                       {cart[item.id] ? (
                         <>
-                          <button
-                            onClick={() => removeFromCart(item.id)}
-                            className="bg-coffee-100 text-coffee-600 p-2 rounded-full hover:bg-coffee-200 transition-colors"
-                          >
-                            <Minus className="h-4 w-4" />
-                          </button>
-                          <span className="text-lg font-semibold text-gray-900 min-w-[2rem] text-center">
-                            {cart[item.id]}
-                          </span>
-                          <button
-                            onClick={() => addToCart(item.id)}
-                            className="bg-coffee-100 text-coffee-600 p-2 rounded-full hover:bg-coffee-200 transition-colors"
-                          >
-                            <Plus className="h-4 w-4" />
-                          </button>
+                                                     <button
+                             onClick={() => removeFromCart(item.id)}
+                             className="bg-coffee-100 text-coffee-600 p-1 rounded-full hover:bg-coffee-200 transition-colors"
+                           >
+                             <Minus className="h-3 w-3" />
+                           </button>
+                           <span className="text-sm font-semibold text-gray-900 min-w-[1.5rem] text-center">
+                             {cart[item.id]}
+                           </span>
+                           <button
+                             onClick={() => addToCart(item.id)}
+                             className="bg-coffee-100 text-coffee-600 p-1 rounded-full hover:bg-coffee-200 transition-colors"
+                           >
+                             <Plus className="h-3 w-3" />
+                           </button>
                         </>
                       ) : (
-                        <button
-                          onClick={() => addToCart(item.id)}
-                          className="btn-primary text-sm py-2 px-4"
-                        >
-                          Add to Cart
-                        </button>
+                                                 <button
+                           onClick={() => addToCart(item.id)}
+                           className="btn-primary text-sm py-2 px-4"
+                         >
+                           Add to Cart
+                         </button>
                       )}
                     </div>
                   </div>

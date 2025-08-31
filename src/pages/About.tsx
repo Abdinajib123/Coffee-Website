@@ -52,8 +52,8 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative text-gray-900 min-h-screen flex items-center">
-        <div className="container-custom section-padding">
+      <section className="relative text-gray-900 flex items-start pt-20 pb-8">
+        <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
               Our Story
@@ -67,7 +67,7 @@ const About = () => {
       </section>
 
       {/* Story Section */}
-      <section className="section-padding">
+      <section className="pt-8 pb-16">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">

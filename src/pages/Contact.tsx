@@ -65,13 +65,13 @@ const Contact = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="text-gray-900 min-h-screen flex items-center">
-        <div className="container-custom section-padding">
-          <div className="text-center">
+      <section className="text-gray-900 flex items-start pt-20 pb-8">
+        <div className="container-custom">
+          <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
               Get in Touch
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 leading-relaxed">
               Have a question, feedback, or just want to say hello? 
               We'd love to hear from you. Reach out to us anytime.
             </p>
@@ -79,10 +79,10 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+             {/* Contact Information */}
+       <section className="pt-8 pb-8">
+         <div className="container-custom">
+           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {contactInfo.map((info, index) => (
               <div key={index} className="text-center p-8 bg-white rounded-xl shadow-lg">
                 <div className="bg-coffee-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
