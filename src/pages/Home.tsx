@@ -1,4 +1,4 @@
-import { ArrowRight, Star, Clock, Coffee, Heart } from 'lucide-react';
+import { ArrowRight, Coffee } from 'lucide-react';
 
 interface HomeProps {
   onNavigate?: (sectionId: string) => void;
@@ -10,45 +10,6 @@ const Home = ({ onNavigate }: HomeProps) => {
       onNavigate(sectionId);
     }
   };
-
-  const features = [
-    {
-      icon: Coffee,
-      title: "Premium Beans",
-      description: "Sourced from the finest coffee regions around the world"
-    },
-    {
-      icon: Clock,
-      title: "Fresh Daily",
-      description: "Roasted fresh every morning for the perfect cup"
-    },
-    {
-      icon: Heart,
-      title: "Made with Love",
-      description: "Every cup crafted with passion and attention to detail"
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Coffee Enthusiast",
-      content: "The best coffee I've ever had! The atmosphere is amazing too.",
-      rating: 5
-    },
-    {
-      name: "Mike Chen",
-      role: "Regular Customer",
-      content: "Consistently great coffee and friendly service. My go-to spot!",
-      rating: 5
-    },
-    {
-      name: "Emily Davis",
-      role: "Food Blogger",
-      content: "Perfect blend of traditional and modern coffee culture.",
-      rating: 5
-    }
-  ];
 
   return (
     <div className="h-screen">
