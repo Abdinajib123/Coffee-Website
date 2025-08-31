@@ -60,7 +60,7 @@ const Home = ({ onNavigate }: HomeProps) => {
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Experience the Perfect
-                <span className="text-coffee-300"> Brew</span>
+                <span className="text-coffee-300"> Casri</span>
               </h1>
               <p className="text-xl text-gray-200 leading-relaxed">
                 Discover our handcrafted coffee made from the finest beans, 

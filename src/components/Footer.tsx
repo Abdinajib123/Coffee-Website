@@ -19,7 +19,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Coffee className="h-8 w-8 text-coffee-400" />
-              <span className="text-2xl font-bold">BrewCafe</span>
+              <span className="text-2xl font-bold">CasriCafe</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Experience the perfect blend of tradition and innovation in every cup. 
@@ -94,7 +94,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-coffee-400" />
-                <span className="text-gray-300">123 Coffee Street, Brew City</span>
+                <span className="text-gray-300">123 Coffee Street, Casri City</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-coffee-400" />
@@ -102,7 +102,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-coffee-400" />
-                <span className="text-gray-300">hello@brewcafe.com</span>
+                <span className="text-gray-300">hello@casricafe.com</span>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
         {/* Bottom Bar */}
         <div className="border-t border-coffee-800 mt-12 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 BrewCafe. All rights reserved. | Made with ☕ and ❤️
+            © 2024 CasriCafe. All rights reserved. | Made with ☕ and ❤️
           </p>
         </div>
       </div>

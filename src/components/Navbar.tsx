@@ -32,7 +32,7 @@ const Navbar = ({ activeSection, onNavigate }: NavbarProps) => {
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
             <Coffee className="h-8 w-8 text-coffee-600" />
-            <span className="text-2xl font-bold text-coffee-800">BrewCafe</span>
+            <span className="text-2xl font-bold text-coffee-800">CasriCafe</span>
           </button>
 
           {/* Desktop Navigation */}

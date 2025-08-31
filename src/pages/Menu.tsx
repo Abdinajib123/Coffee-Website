@@ -66,11 +66,11 @@ const Menu = () => {
       popular: true
     },
     {
-      id: 'cold-brew',
-      name: 'Cold Brew',
+              id: 'cold-casri',
+        name: 'Cold Casri',
       category: 'cold-coffee',
       price: 4.50,
-      description: 'Smooth and refreshing 18-hour cold brew',
+              description: 'Smooth and refreshing 18-hour cold casri',
       rating: 4.9,
       image: '🧊',
       popular: true

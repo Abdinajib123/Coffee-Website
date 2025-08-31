@@ -35,7 +35,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: "123 Coffee Street, Brew City, BC 12345",
+              details: "123 Coffee Street, Casri City, BC 12345",
       description: "Located in the heart of downtown"
     },
     {
@@ -47,7 +47,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "hello@brewcafe.com",
+              details: "hello@casricafe.com",
       description: "We'll respond within 24 hours"
     }
   ];
@@ -222,7 +222,7 @@ const Contact = () => {
                       Interactive Map Coming Soon
                     </p>
                     <p className="text-coffee-600 text-sm">
-                      123 Coffee Street, Brew City, BC 12345
+                      123 Coffee Street, Casri City, BC 12345
                     </p>
                   </div>
                 </div>
@@ -314,13 +314,13 @@ const Contact = () => {
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             We can't wait to serve you the perfect cup of coffee. 
-            Stop by today and experience the BrewCafe difference.
+            Stop by today and experience the CasriCafe difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+15551234567" className="btn-primary bg-white text-coffee-800 hover:bg-gray-100">
               Call Now
             </a>
-            <a href="mailto:hello@brewcafe.com" className="btn-secondary border-white text-white hover:bg-white hover:text-coffee-800">
+            <a href="mailto:hello@casricafe.com" className="btn-secondary border-white text-white hover:bg-white hover:text-coffee-800">
               Email Us
             </a>
           </div>
