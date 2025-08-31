@@ -5,7 +5,7 @@ const About = () => {
     {
       icon: Heart,
       title: "Passion",
-      description: "We pour our heart into every cup, ensuring each casri is crafted with love and dedication."
+      description: "We pour our heart into every cup, ensuring each brew is crafted with love and dedication."
     },
     {
       icon: Target,
@@ -28,7 +28,7 @@ const About = () => {
     { year: "2010", title: "Founded", description: "Started as a small coffee cart with big dreams" },
     { year: "2015", title: "First Cafe", description: "Opened our flagship location in downtown" },
     { year: "2018", title: "Expansion", description: "Launched our roasting facility and online store" },
-          { year: "2024", title: "Innovation", description: "Introducing new casriing methods and experiences" }
+          { year: "2024", title: "Innovation", description: "Introducing new brewing methods and experiences" }
   ];
 
   const team = [
@@ -50,7 +50,7 @@ const About = () => {
   ];
 
   return (
-    <div className="h-screen">
+    <div>
       {/* Hero Section */}
       <section className="relative text-gray-900 min-h-screen flex items-center">
         <div className="container-custom section-padding">
@@ -71,9 +71,9 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-900">
-                A Passion That Casris Excellence
-              </h2>
+                              <h2 className="text-4xl font-bold text-gray-900">
+                  A Passion That Creates Excellence
+                </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Founded in 2010, CasriCafe began as a simple dream: to serve the perfect cup of coffee. 
                 What started as a small coffee cart has grown into a beloved community gathering place, 

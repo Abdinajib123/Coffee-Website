@@ -12,9 +12,9 @@ const Home = ({ onNavigate }: HomeProps) => {
   };
 
   return (
-    <div className="h-screen">
+    <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-700 text-white overflow-hidden h-screen flex items-center">
+      <section className="relative bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-700 text-white overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative container-custom py-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center h-full">

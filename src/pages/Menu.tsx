@@ -168,7 +168,7 @@ const Menu = () => {
   };
 
   return (
-    <div className="h-screen bg-gray-50">
+    <div className="bg-gray-50">
       {/* Hero Section */}
       <section className="text-gray-900 min-h-screen flex items-center">
         <div className="container-custom section-padding">
@@ -204,9 +204,9 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* Menu Items */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredItems.slice(0, 6).map((item) => (
+                     {/* Menu Items */}
+           <div className="grid grid-cols-3 gap-8">
+             {filteredItems.slice(0, 6).map((item) => (
               <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">

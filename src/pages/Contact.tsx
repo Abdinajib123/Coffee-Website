@@ -63,7 +63,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="h-screen bg-gray-50">
+    <div className="bg-gray-50">
       {/* Hero Section */}
       <section className="text-gray-900 min-h-screen flex items-center">
         <div className="container-custom section-padding">
